@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TableLayout android:id="@+id/table1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:text="Open...                                                                               Ctrl-O                                                                "
+                android:background="#cd7f32"
+                android:id="@+id/open"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:text="Save...                                                                               Ctrl-S                                                                "
+                android:background="#cd7f32"
+                android:id="@+id/save"
+                android:layout_below="@id/open"
+                android:layout_alignLeft="@id/open"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:text="Save As...                                                                      Ctrl-Shift-S                                                  "
+                android:background="#cd7f32"
+                android:id="@+id/saveas"
+                android:layout_below="@id/save"
+                android:layout_alignLeft="@id/save"/>
+
+
+        </RelativeLayout>
+    </TableLayout>
+
+
+    <TableLayout android:id="@+id/table2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:text="X Import...                                                                                                                                      "
+                android:background="#c0c0c0"
+                android:id="@+id/ximport"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:text=""
+                android:id="@+id/blank"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"/>
+
+
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:text="X Export...                                                                           Ctrl-E                                                                               "
+                android:background="#c0c0c0"
+                android:id="@+id/xexport"
+                android:layout_below="@id/ximport"
+                android:layout_alignLeft="@id/ximport"/>
+
+        </RelativeLayout>
+    </TableLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:text="  Quit...                                                                                          "
+        android:id="@+id/quit"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"/>
+
+</LinearLayout>
+
+
